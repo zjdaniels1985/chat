@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+    src: url("../BarlowCondensed.ttf");
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+}
+
+.chat-window {
+  position: absolute;
+  left: 15px;
+  width: 32vw;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 5vh;
+  -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  max-height: 100%;
+  font-size: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.prefix {
+  font-size: 1.8vh;
+  position: absolute;
+  margin-top: 0.8%;
+  margin-left: 1.5%;
+  left: 0.208%;
+}
+
+.chat-input {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 27vh;
+  left: 45px;
+width: 416.5px;
+
+height: auto;
+
+background: linear-gradient(90deg, rgba(25, 28, 35, 0.75) 48.89%, rgba(19, 19, 19, 0.12) 122.94%);
+
+border-radius: 2px;
+
+transform: skew(20deg);
+
+border-radius: 5px;
+
+border: 0px;
+  box-sizing: border-box;
+}
+
+textarea {
+  overflow: hidden;
+  padding-top: 10px;
+  width: 330.5px;
+  /* max-width: 50px; */
+  max-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: block;
+  height: 48px;
+  resize: none;
+  transform: skew(-20deg);
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  word-break: break-word;
+  font-family: 'Khula', sans-serif;
+}
+.btnSend{
+  position: absolute;
+  left: 370px;
+  top: 10px;
+  transform: skew(
+    -20deg
+    );
+}
+
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  
+  list-style-type: none;
+  padding: 5px;
+  margin-top: 40px;
+  padding-left: 27px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  width: 80%;
+  border-radius: 5%;
+}
+
+.help {
+  margin-top: -10px;
+  color: #ffffffe7;
+}
+
+.disabled {
+  margin-top: -10px;
+  color: #ffffff93;
+}
+
+.suggestion {
+  transform: skew( -20deg);
+  margin-bottom: 5px;
+  color: #ffffffec;
+}
+.suggestions-wrap{
+  position: absolute;
+  width: 500px;
+}
+.btnSend{
+  position: absolute;
+}
+
+.chat-message {
+  width: 504.5px;
+  min-height: 23.5px;
+  height: auto;
+  transform: skew(20deg);
+  margin-left: 10px;
+  background: linear-gradient(90deg, rgba(25, 28, 35, 0.75) 48.89%, rgba(19, 19, 19, 0.12) 122.94%);
+  border-radius: 5px;
+  color: white;
+  overflow: hidden;
+}
+
+.chat-message-body {
+  resize: none;
+ display: block;
+ transform: skew(-20deg);
+ /* text-align: center; */
+ /* left: 15px; */
+ margin-top: 5px;
+ margin-left: 15px;
+ /* margin-right: 15px; */
+ /* margin-top: 10px; */
+ word-break: break-word;
+ font-family: 'Khula', sans-serif;
+ font-size: 15px;
+ overflow-y:none;
+}
+
+.chat-message.advert {
+  background-color: rgba(47, 92, 115, 0.8);
+  border-radius:2em;
+}
+
+.warning {
+  background-color: rgba(255, 136, 0, 0.8);
+  border-radius:2em;
+}
+
+.normal {
+  /* background: linear-gradient(to left, #8a0022 0%, #000000 54%); */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* border-radius:2em; */
+}
+
+.error {
+  background-color: rgba(191, 36, 36, 0.9);
+  border-radius:2em;
+}
+
+.chat-message.system {
+  background-color: rgb(67, 57, 111);
+  border-radius:2em;
+}
+
+.chat-message.emergency {
+  background-color: rgba(224, 50, 50, 0.8);
+  border-radius:2em;
+}
+
+.chat-message.nonemergency {
+  background-color: rgba(112, 25, 25, 0.8);
+  border-radius:2em;
+}
+
+.chat-message.report {
+  background-color: rgba(86, 173, 10, 0.8);
+  border-radius:2em;
+}
+
+.underArea{
+  position: absolute;
+  top: 50px;
+  transform: skew(-20deg);
+}
